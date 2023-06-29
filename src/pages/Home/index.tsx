@@ -4,7 +4,9 @@ import {
   Divider,
   FormContainer,
   HomeContainer,
+  MinutesAmountInput,
   StartCountdownButton,
+  TaskInput,
 } from './styles'
 
 export function Home() {
@@ -13,10 +15,14 @@ export function Home() {
       <form action="#">
         <FormContainer>
           <label htmlFor="task">I will work in</label>
-          <input id="task" />
+          <TaskInput id="task" placeholder="give your task a name" />
 
-          <label htmlFor="minutesAmount">for</label>
-          <input type="number" id="minutesAmount" />
+          <label htmlFor="minutesAmount">during</label>
+          <MinutesAmountInput
+            type="number"
+            id="minutesAmount"
+            placeholder="00"
+          />
 
           <span>minutes.</span>
         </FormContainer>
